@@ -75,7 +75,7 @@ Static inspection counted **340 rules**: 333 `DOMAIN-SUFFIX`, 4 `IP-CIDR`, 2 `GE
 
 | File | Purpose | Availability |
 | :--- | :--- | :--- |
-| [⬇ Download Shadowrocket-RU-CN-Routing.1.0.Beta.conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) | Russia v1.0 Beta attachment | Included; client and network testing pending |
+| [Repository file](configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) · [⬇ Download .conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) · [Raw remote config](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) | Russia v1.0 Beta configuration | Included; client and network testing pending |
 
 ### Import the included Russia Beta
 
