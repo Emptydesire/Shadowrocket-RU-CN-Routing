@@ -79,7 +79,7 @@
 
 | Конфигурация | Статус | Скачать или открыть |
 | :--- | :--- | :--- |
-| Russia v1.0 Beta | Исходный файл без изменений; статическая проверка выполнена | [Файл](configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) · [⬇ Скачать Shadowrocket-RU-CN-Routing.1.0.Beta.conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) · [Raw для удалённой конфигурации](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) |
+| Russia v1.0 Beta | Исходный файл без изменений; статическая проверка выполнена | 1. [Файл в репозитории](configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf)<br>2. [⬇ Скачать .conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.Beta.conf)<br>3. [Raw для удалённой конфигурации](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) |
 
 Файл опубликован по [действующей Raw-ссылке](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf). Её можно использовать для скачивания или добавить в удалённые конфигурации Shadowrocket. Подробности о Raw-файлах — в [официальной справке GitHub](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content).
 
