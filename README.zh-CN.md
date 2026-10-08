@@ -148,6 +148,7 @@ https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/co
 
 | 网络 | 接收地址 |
 | :--- | :--- |
+| **Ethereum (ETH)** | `0xba16652ff3fa0d5b726ce1bb97e9c28bc9bc5efc` |
 | **BNB Chain** | `0xba16652ff3fa0d5b726ce1bb97e9c28bc9bc5efc` |
 | **TRON Chain** | `TFaTEkxQFtF6SV67qhHgg4kPqwHU4ZQgyb` |
 
