@@ -6,7 +6,7 @@
 
 ## 简体中文
 
-欢迎规则修正、网络测试与三语文档改进。仓库发布后，通过 Issues 报告问题，或提交聚焦单一问题的 Pull Request。
+欢迎规则修正、网络测试与三语文档改进。通过 Issues 报告问题，或提交聚焦单一问题的 Pull Request。
 
 ### 提交有用的反馈
 
@@ -28,7 +28,7 @@ Google 官方列有 YouTube 专用域名（[域名说明](https://knowledge.work
 
 ## Русский
 
-Приветствуются исправления правил, результаты сетевых тестов и улучшения документации. После публикации репозитория используйте Issues для ошибок и отдельный Pull Request для каждого изменения.
+Приветствуются исправления правил, результаты сетевых тестов и улучшения документации. Сообщайте об ошибках через Issues, а изменения оформляйте отдельным Pull Request.
 
 В отчёте укажите версию или коммит конфигурации Russia, версию Shadowrocket, дату, страну или регион, оператора и тип сети, домен, ожидаемый и фактический маршрут, шаги воспроизведения. Сведения о местоположении и операторе можно ограничить ради приватности. Удалите из журналов адреса узлов, пароли, личные ссылки подписок, токены, учётные данные и постороннюю историю соединений.
 
@@ -48,7 +48,7 @@ Google перечисляет [домены YouTube](https://knowledge.workspace
 
 ## English
 
-Routing fixes, network test results, and documentation improvements are welcome. Once the repository is published, report bugs through Issues and keep each pull request focused on one change.
+Routing fixes, network test results, and documentation improvements are welcome. Report bugs through Issues and keep each pull request focused on one change.
 
 Include the Russia configuration version or commit, Shadowrocket version, test date, country or region, operator and network type, affected domain, expected and observed routes, and reproduction steps. Share regional/operator details only as appropriate for your privacy. Remove node addresses, passwords, private subscription URLs, tokens, account details, and unrelated browsing history from logs.
 
