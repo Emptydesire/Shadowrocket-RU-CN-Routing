@@ -2,7 +2,7 @@
 
 [简体中文](#zh-cn) · [Русский](#ru) · [English](#en)
 
-**2026-10-08 · Russia v2.0 Beta · Static review only**
+**2026-10-08 · Russia v1.0 Beta · Static review only**
 
 File / 文件 / Файл: [`configs/Russia.conf`](../configs/Russia.conf)  
 Source filename / 原文件名 / Исходное имя: `Shadowrocket-Russia-v2.0-Beta.conf`
@@ -10,14 +10,14 @@ Source filename / 原文件名 / Исходное имя: `Shadowrocket-Russia-v
 SHA-256:
 
 ```text
-13b3fbb76326ab0141bb1b28f98ea2c1a101648ffccb116181d0b3b5c6967df0
+381dc3587d7fe7ddca221600d902a6f0e9e97b5e110af1f5214b8bce98517ab6
 ```
 
 <a id="zh-cn"></a>
 
 ## 简体中文
 
-**俄罗斯模式原文件已完成静态核对，发布副本保持原文件内容不变。** 本报告只针对上述哈希对应的文件；配置包含中国服务 DIRECT，但本仓库不提供中国模式。
+**俄罗斯模式配置已完成静态核对。规则内容保持不变，仅将文件首行版本注释更新为 v1.0 Beta。** 本报告只针对上述哈希对应的文件；配置包含中国服务 DIRECT，但本仓库不提供中国模式。
 
 | 检查项 | 结果 |
 | :--- | :--- |
@@ -44,7 +44,7 @@ SHA-256:
 
 ## Русский
 
-**Исходный профиль Russia прошёл статическую проверку; копия для публикации сохранена без изменений.** Отчёт относится только к файлу с указанным хешем. Китайские сервисы направляются через DIRECT; отдельного профиля для использования в Китае в этом репозитории нет.
+**Профиль Russia прошёл статическую проверку. Правила сохранены; обновлён только комментарий версии в первой строке на v1.0 Beta.** Отчёт относится только к файлу с указанным хешем. Китайские сервисы направляются через DIRECT; отдельного профиля для использования в Китае в этом репозитории нет.
 
 | Проверка | Результат |
 | :--- | :--- |
@@ -71,7 +71,7 @@ SHA-256:
 
 ## English
 
-**The original Russia profile has been statically reviewed; the publication copy is unchanged.** This report applies only to the file identified by the hash above. Chinese services use DIRECT; this repository does not provide a separate profile for use in China.
+**The Russia profile has been statically reviewed. Routing rules are unchanged; only the first-line version comment was updated to v1.0 Beta.** This report applies only to the file identified by the hash above. Chinese services use DIRECT; this repository does not provide a separate profile for use in China.
 
 | Check | Result |
 | :--- | :--- |
