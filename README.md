@@ -4,7 +4,7 @@
 
 <img src="assets/banner-inkwash-final.svg" width="100%" alt="Shadowrocket Russia routing rules — Russia v1.0 Beta" />
 
-# Shadowrocket-RU-CN-Routing
+# Shadowrocket-RU-CN-Routing 1.0
 
 **For Russian networks · Local services direct · YouTube proxy rules**
 
@@ -19,7 +19,7 @@ An experimental Shadowrocket configuration for use on Russian networks.
 ---
 
 > [!IMPORTANT]
-> **The public repository is live.** The Russia v1.0 Beta profile preserves the supplied routing rules; only its version comment is updated to v1.0 Beta. The configuration file is [Russia.conf](configs/Russia.conf). Its 340 rules have been checked statically; no Shadowrocket runtime or Russian-network testing has been performed. Use the active Raw link below to fetch the file.
+> **The public repository is live.** The Russia v1.0 Beta profile preserves the supplied routing rules; only its version comment is updated to v1.0 Beta. The configuration file is [Shadowrocket-RU-CN-Routing.1.0.conf](configs/Shadowrocket-RU-CN-Routing.1.0.conf). Its 340 rules have been checked statically; no Shadowrocket runtime or Russian-network testing has been performed. Use the active Raw link below to fetch the file.
 
 <a id="overview"></a>
 
@@ -75,12 +75,12 @@ Static inspection counted **340 rules**: 333 `DOMAIN-SUFFIX`, 4 `IP-CIDR`, 2 `GE
 
 | File | Purpose | Availability |
 | :--- | :--- | :--- |
-| [⬇ Download Russia.conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Russia.conf) | Russia v1.0 Beta attachment | Included; client and network testing pending |
+| [⬇ Download Shadowrocket-RU-CN-Routing.1.0.conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.conf) | Russia v1.0 Beta attachment | Included; client and network testing pending |
 
 ### Import the included Russia Beta
 
 1. Back up your current Shadowrocket configuration and any local edits.
-2. Locate [configs/Russia.conf](configs/Russia.conf) in this package. Its routing rules match the supplied file; only the version comment is updated to v1.0 Beta.
+2. Locate [configs/Shadowrocket-RU-CN-Routing.1.0.conf](configs/Shadowrocket-RU-CN-Routing.1.0.conf) in this package. Its routing rules match the supplied file; only the version comment is updated to v1.0 Beta.
 3. In Shadowrocket's configuration area, import the local `.conf` file. Interface labels may vary by app version; this import has not been tested in the client.
 4. Select the imported profile, use configuration-based routing, and select your own working proxy node.
 5. Check a local service, a Google service, and YouTube to confirm that the intended routes work on your network.
@@ -94,7 +94,7 @@ Download the `.conf` file or add its **Raw** URL in Shadowrocket's configuration
 This is the active Raw URL for the `main` branch:
 
 ```text
-https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf
+https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.conf
 ```
 
 A configuration URL supplies routing settings; **it is not a proxy-node subscription**. Import your node subscription separately if needed. A branch URL can change as maintainers update it; a commit URL pins one revision. Whether and when remote configurations refresh depends on your client settings. Updates may overwrite local edits, so keep a backup.
