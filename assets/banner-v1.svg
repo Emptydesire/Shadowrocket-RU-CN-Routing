@@ -1,71 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="360" viewBox="0 0 1440 360" role="img" aria-labelledby="title desc">
   <title id="title">Shadowrocket — Russia Routing · Маршрутизация для России</title>
-  <desc id="desc">Chinese ink-wash mountain landscape for the Shadowrocket Russia v1.0 Beta profile. English and Russian labels describe direct and proxy routes.</desc>
+  <desc id="desc">Soft Chinese ink-wash mountain landscape for Shadowrocket Russia v1.0 Beta. English and Russian labels describe direct and proxy routing.</desc>
   <defs>
-    <linearGradient id="paper" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#f8f2e5"/><stop offset=".55" stop-color="#eee5d2"/><stop offset="1" stop-color="#ddd1b8"/></linearGradient>
-    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f7f1e5" stop-opacity="0"/><stop offset=".48" stop-color="#fffdf7" stop-opacity=".88"/><stop offset="1" stop-color="#e8dfce" stop-opacity=".25"/></linearGradient>
-    <linearGradient id="mountain" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#66736b"/><stop offset=".45" stop-color="#354b49"/><stop offset="1" stop-color="#243a3c"/></linearGradient>
-    <linearGradient id="foreground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#53615a"/><stop offset="1" stop-color="#182e32"/></linearGradient>
-    <radialGradient id="sun"><stop stop-color="#d58a60" stop-opacity=".86"/><stop offset="1" stop-color="#bd5844" stop-opacity=".78"/></radialGradient>
-    <pattern id="papergrain" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M0 8c10-2 21 2 40-1M4 31c13 2 19-3 36 0" fill="none" stroke="#8b7659" stroke-opacity=".07" stroke-width=".7"/>
-      <circle cx="12" cy="19" r=".7" fill="#6f5941" opacity=".13"/><circle cx="33" cy="6" r=".6" fill="#6f5941" opacity=".1"/>
+    <linearGradient id="paper" x1="0" y1="0" x2=".95" y2="1"><stop stop-color="#f8f3e8"/><stop offset=".58" stop-color="#efe7d7"/><stop offset="1" stop-color="#ded4c1"/></linearGradient>
+    <linearGradient id="farwash" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#88968a" stop-opacity=".3"/><stop offset="1" stop-color="#65766c" stop-opacity=".55"/></linearGradient>
+    <linearGradient id="midwash" x1=".15" y1="0" x2=".8" y2="1"><stop stop-color="#758276" stop-opacity=".65"/><stop offset=".55" stop-color="#465c55" stop-opacity=".76"/><stop offset="1" stop-color="#334a45" stop-opacity=".9"/></linearGradient>
+    <linearGradient id="inkwash" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#51665d"/><stop offset=".42" stop-color="#344b47"/><stop offset="1" stop-color="#1c3334"/></linearGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f6f0e4" stop-opacity="0"/><stop offset=".45" stop-color="#fffdf6" stop-opacity=".94"/><stop offset="1" stop-color="#e9e1d1" stop-opacity=".18"/></linearGradient>
+    <radialGradient id="sun"><stop stop-color="#d89972" stop-opacity=".78"/><stop offset="1" stop-color="#b85343" stop-opacity=".6"/></radialGradient>
+    <pattern id="papergrain" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M0 8c13-3 24 2 38-1M3 29c11 2 21-2 35 1" fill="none" stroke="#77674f" stroke-opacity=".08" stroke-width=".7"/>
+      <circle cx="11" cy="18" r=".65" fill="#594a37" opacity=".11"/><circle cx="30" cy="5" r=".55" fill="#594a37" opacity=".1"/>
     </pattern>
-    <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="softwash" x="-8%" y="-12%" width="116%" height="124%">
+      <feTurbulence type="fractalNoise" baseFrequency=".012 .027" numOctaves="2" seed="9" result="grain"/>
+      <feDisplacementMap in="SourceGraphic" in2="grain" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation=".65"/>
+    </filter>
+    <filter id="sunblur"><feGaussianBlur stdDeviation="2.5"/></filter>
   </defs>
 
-  <!-- Rice-paper ground and fine texture -->
   <rect width="1440" height="360" rx="22" fill="url(#paper)"/>
-  <rect x="11" y="11" width="1418" height="338" rx="16" fill="none" stroke="#9b7b4c" stroke-opacity=".52"/>
+  <rect x="11" y="11" width="1418" height="338" rx="16" fill="none" stroke="#9d8157" stroke-opacity=".48"/>
   <rect width="1440" height="360" rx="22" fill="url(#papergrain)"/>
 
-  <!-- Setting sun and ink-wash cloud bands -->
-  <circle cx="1165" cy="98" r="55" fill="url(#sun)"/>
-  <path d="M700 116c88-27 143-23 211-5 74 20 143 12 225-13 80-24 142-24 248 4" fill="none" stroke="#b4a98f" stroke-width="2" stroke-opacity=".32"/>
-  <path d="M760 133c98-20 158-8 218 4 73 14 145 7 230-12 74-17 136-14 205 2" fill="none" stroke="#fffaf0" stroke-width="5" stroke-opacity=".7"/>
+  <!-- Hazy vermilion sun and long cloud washes -->
+  <circle cx="1175" cy="96" r="59" fill="url(#sun)" filter="url(#sunblur)"/>
+  <path d="M555 125c87-26 158-26 235-9 62 14 123 20 194 5 77-17 135-38 221-29 61 7 115 29 183 24" fill="none" stroke="#8d9383" stroke-width="9" stroke-linecap="round" opacity=".12"/>
+  <path d="M720 139c87-17 153-9 222 5 76 16 145 8 222-12 74-19 142-15 218 5" fill="none" stroke="#fffdf7" stroke-width="12" stroke-linecap="round" opacity=".64"/>
 
-  <!-- Distant peaks -->
-  <path d="M470 282 591 175l43 39 100-125 80 94 74-58 78 83 83-115 87 88 74-54 112 105 118-92v220H470z" fill="#c1c4b2" opacity=".61"/>
-  <path d="m536 228 98-96 36 42 64-79 77 96-39-25-36 16-36-26-37 43-32-18-47 42z" fill="#87958a" opacity=".45"/>
-  <path d="m844 222 83-99 38 48 75-74 72 95-45-28-42 18-32-24-39 36-29-13z" fill="#7b8b80" opacity=".43"/>
-  <path d="m1066 236 95-123 39 47 74-64 76 92-42-23-39 14-35-26-34 34-34-16z" fill="#7c8c81" opacity=".42"/>
+  <!-- Distant, soft-edged ridgelines -->
+  <path d="M448 292c42-29 73-38 106-65 27-22 45-56 73-66 29-10 47 22 72 43 31-28 64-96 98-95 34 1 47 67 77 90 34-23 56-69 87-73 35-4 56 49 88 73 31-21 62-87 99-88 41-1 53 74 87 93 35-19 58-47 89-46 41 2 63 53 116 66v141H448z" fill="url(#farwash)" opacity=".7" filter="url(#softwash)"/>
+  <path d="M535 263c41-27 70-62 92-71 25-10 41 20 72 39 34-34 70-88 98-91 29-3 45 52 74 78 33-27 54-59 81-61 29-2 50 46 80 66 32-29 64-73 93-73 31 0 50 58 80 78 35-26 61-43 89-38" fill="none" stroke="#f8f3e8" stroke-width="3" stroke-linecap="round" opacity=".46"/>
 
-  <!-- Layered middle mountains -->
-  <path d="M470 302c91-47 151-83 221-70 52 10 86 44 118 73 76-82 142-114 222-93 47 13 76 49 108 86 79-70 155-80 301-16v78H470z" fill="#a5ad9e" opacity=".62"/>
-  <path d="M625 305c91-82 142-130 203-113 40 11 72 48 99 91-67-37-105-24-143 13 89-38 165-8 224 40 76-85 169-92 278-34 42-12 89-4 154 27v31H625z" fill="url(#mountain)" opacity=".79"/>
-  <path d="M799 300c60-63 112-83 151-62 22 11 39 29 55 54-45-21-77-10-106 24 73-35 145-10 204 36H740z" fill="#d4d2c1" opacity=".55"/>
+  <!-- Middle mountains, shaped as layered brush washes -->
+  <path d="M432 307c53-34 101-51 140-81 38-29 56-79 91-88 40-10 64 40 99 69 45-31 77-91 120-91 40 0 64 55 103 83 41-26 76-75 115-73 43 2 64 55 104 78 39-30 72-56 109-50 45 7 77 53 127 65v141H432z" fill="url(#midwash)" opacity=".66" filter="url(#softwash)"/>
+  <path d="M656 315c47-40 81-84 119-89 36-5 62 33 97 59 43-38 80-81 120-79 37 2 61 42 98 67 41-31 76-56 114-48 43 9 72 47 118 59v76H656z" fill="#d6d2c1" opacity=".61"/>
+  <path d="M751 281c37-24 65-55 94-55 27 0 46 30 74 49 31-27 58-60 88-60 30 0 50 30 78 49 34-24 58-40 88-35" fill="none" stroke="#e9e4d7" stroke-width="4" stroke-linecap="round" opacity=".5"/>
 
-  <!-- Mist drifting through the valley -->
-  <path d="M438 255c97-18 186-11 260 6 81 18 151 17 231-2 94-22 172-18 266 3 83 19 147 16 245-5v65H438z" fill="url(#mist)"/>
-  <path d="M577 272c85-13 156-7 225 8 75 16 142 15 218-2 90-20 165-18 243 1 57 14 103 15 162 4" fill="none" stroke="#fffdf6" stroke-width="8" stroke-linecap="round" opacity=".53"/>
+  <!-- Foreground ink ridges with fluid outlines -->
+  <path d="M693 360c31-39 47-78 81-102 33-24 64-20 98-4 31 14 50 38 73 58 29-37 60-74 100-79 45-5 75 32 109 62 37-32 70-56 111-48 48 9 94 49 175 73v40z" fill="url(#inkwash)" opacity=".9"/>
+  <path d="M736 358c30-30 51-60 80-71 26-9 48 5 65 21-31-8-53 5-70 26 44-24 86-18 124 8-4 8-9 14-13 20H736z" fill="#617267" opacity=".54"/>
+  <path d="M997 359c33-33 61-48 89-44 21 3 41 17 59 34-39-16-67-9-95 10h-53zM1187 355c39-23 75-23 111-2" fill="none" stroke="#c8c2b0" stroke-width="2" opacity=".54"/>
 
-  <!-- Foreground ink cliffs and water -->
-  <path d="M716 360c29-45 50-95 91-122 35-23 69-19 105-1-42 2-62 21-77 48 54-34 119-28 166 3 45-43 93-61 151-41 61 20 105 62 156 97v16z" fill="url(#foreground)" opacity=".94"/>
-  <path d="M887 360c41-37 75-51 107-42 19 5 38 17 56 33-39-15-64-6-91 9h-72zM1140 360c48-29 92-27 136-2" fill="none" stroke="#d7cdb7" stroke-width="2" opacity=".54"/>
-  <path d="M726 332c65-13 127-13 183 0m59-16c62-13 115-10 171 4m-464 23c34-7 62-8 94-4" fill="none" stroke="#f7f1e5" stroke-width="2" stroke-linecap="round" opacity=".68"/>
+  <!-- Valley mist and water strokes -->
+  <path d="M427 262c88-23 166-20 238-3 81 20 146 25 223 7 91-22 161-23 243-3 87 22 174 24 309-3v76H427z" fill="url(#fog)"/>
+  <path d="M485 276c83-16 156-12 227 5 67 16 126 17 197 0 86-21 161-22 234-3 59 15 120 19 199 6" fill="none" stroke="#fffdf7" stroke-width="10" stroke-linecap="round" opacity=".53"/>
+  <path d="M572 323c63-13 124-12 178 2m36-13c65-10 118-8 174 6m82-16c48-8 90-6 135 5" fill="none" stroke="#f8f3e8" stroke-width="2" stroke-linecap="round" opacity=".72"/>
 
-  <!-- Small pine silhouettes -->
-  <g fill="none" stroke="#233b39" stroke-linecap="round" stroke-linejoin="round" opacity=".8">
-    <path d="M1098 260v47m-13-31 13-10 14 10m-21 5 7-8 9 8m-15 8 6-7 8 7" stroke-width="2"/>
-    <path d="M1122 268v40m-12-25 12-9 12 9m-18 4 6-7 8 7m-14 7 6-6 7 6" stroke-width="1.7"/>
-    <path d="M1274 264v43m-14-27 14-10 15 10m-21 5 7-7 9 7m-15 8 6-6 8 6" stroke-width="1.8"/>
+  <!-- Fine pine brushwork on the slopes -->
+  <g fill="none" stroke="#263a36" stroke-linecap="round" stroke-linejoin="round" opacity=".69">
+    <path d="M1110 251v52m-16-34 16-12 16 12m-25 5 9-10 11 9m-18 8 8-8 9 8m-17 7 8-7 8 7" stroke-width="1.9"/>
+    <path d="M1140 260v43m-13-28 13-10 13 10m-21 5 8-8 9 7m-16 8 7-7 8 7" stroke-width="1.6"/>
+    <path d="M1272 250v52m-16-34 16-12 16 12m-24 5 8-9 10 8m-17 8 8-7 8 7m-16 7 7-6 8 6" stroke-width="1.8"/>
   </g>
 
-  <!-- Bilingual title, keeping the product name unchanged -->
+  <!-- English and Russian copy; product name is unchanged -->
   <path d="M58 57h42" stroke="#a64034" stroke-width="4" stroke-linecap="round"/>
-  <text x="111" y="63" font-family="Georgia, serif" font-size="13" letter-spacing="1.7" fill="#6b695d">RULE-BASED ROUTING · МАРШРУТИЗАЦИЯ</text>
+  <text x="111" y="63" font-family="Georgia, serif" font-size="13" letter-spacing="1.35" fill="#68685d">RULE-BASED ROUTING · МАРШРУТИЗАЦИЯ</text>
   <text x="53" y="151" font-family="Apple Chancery, Zapfino, STXingkai, cursive" font-size="66" font-style="italic" font-weight="600" letter-spacing="-1" fill="#1d3437">Shadowrocket</text>
   <text x="60" y="190" font-family="Georgia, serif" font-size="20" fill="#873f35">Russia profile · Профиль для России</text>
   <text x="61" y="222" font-family="Georgia, serif" font-size="13.2" fill="#435b56">Local services DIRECT · Местные сервисы напрямую</text>
   <text x="61" y="246" font-family="Georgia, serif" font-size="13.2" fill="#435b56">YouTube via PROXY · YouTube через PROXY</text>
 
-  <!-- Restrained version cartouche -->
   <path d="M60 281h230l12 12v31H60z" fill="#203537"/>
   <path d="M67 288h222v29H67z" fill="none" stroke="#c9a66a" stroke-width="1"/>
   <text x="178" y="307" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" letter-spacing=".8" fill="#f2dfb8">RUSSIA · РОССИЯ · 1.0 BETA</text>
   <text x="323" y="307" font-family="Georgia, serif" font-size="12" font-weight="700" letter-spacing="1" fill="#8b4437">MIT</text>
 
-  <!-- Cinnabar seal with country profile code -->
   <g transform="translate(1371 302) rotate(-7)">
     <rect x="-28" y="-28" width="56" height="56" rx="3" fill="#a43f34"/>
     <rect x="-22" y="-22" width="44" height="44" rx="2" fill="none" stroke="#efdcb9" stroke-width="1.4"/>
