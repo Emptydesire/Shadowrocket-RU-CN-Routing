@@ -17,7 +17,7 @@
 ---
 
 > [!IMPORTANT]
-> **俄罗斯测试配置已收录，GitHub 尚未发布。** 本文件包包含用户提供的 Russia v2.0 Beta 原文件，已完成规则结构、数量与关键顺序的静态核对；尚未在 Shadowrocket 中实际导入，也未在俄罗斯当地网络实测。下文 Raw 地址为发布后使用的模板。
+> **项目已发布到 GitHub。** 仓库包含用户提供的 Russia v2.0 Beta 原文件，内容未修改；已完成规则结构、数量与关键顺序的静态核对。尚未在 Shadowrocket 中实际导入，也未在俄罗斯当地网络实测。可使用下方 Raw 链接下载。
 
 <a id="overview"></a>
 
@@ -80,7 +80,7 @@ Google 搜索、Gmail、Maps、Drive、Translate、Photos、Play 等非 YouTube 
 
 | 配置 | 文件 | 验证状态 |
 | :--- | :--- | :--- |
-| **Russia v2.0 Beta** | [打开 / 保存 Russia.conf](configs/Russia.conf) | 原文件已收录；静态核对完成，客户端与网络待测 |
+| **Russia v2.0 Beta** | [仓库文件](configs/Russia.conf) · [Raw 直接下载](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) | 原文件已收录；客户端与网络待测 |
 
 **340 条规则**：333 条域名后缀、4 条 IP 网段、2 条 GEOIP、1 条最终规则；共 291 条 DIRECT、49 条 PROXY。未发现完全重复的规则行。统计不等于 340 个服务，也不代表实测通过。完整记录见 [静态核对报告](docs/VALIDATION.md#zh-cn)。
 
@@ -96,19 +96,19 @@ Shadowrocket 支持通过 URL 或 iCloud Drive 导入规则文件（[开发者 A
 
 按钮名称可能随客户端版本和界面语言变化。当前配置使用系统 DNS，并关闭 IPv6；静态核对不等于客户端兼容性或 DNS 行为验证。
 
-### GitHub 发布后：Raw 远程配置
+### Raw 远程配置
 
-在 GitHub 中打开实际发布的 `.conf` 文件，点击 **Raw** 获取纯文本内容，或用原始文件下载按钮保存文件（[GitHub 官方说明](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content)）。远程配置须使用 Raw 地址，而非 `blob` 文件预览页。
+已发布的 [Russia.conf Raw 文件](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) 可用于直接下载，或添加到 Shadowrocket 的远程配置中。Raw 地址提供原始配置内容，不是 `blob` 预览页（[GitHub 官方说明](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content)）。
 
-下面是**地址模板，目前不是有效订阅链接**。将 `OWNER` 替换为实际账户或组织，将 `REF` 替换为实际分支、标签或提交；仓库与文件必须先发布。
+当前 `main` 分支的 Raw 地址：
 
 ```text
-https://raw.githubusercontent.com/OWNER/Shadowrocket-RU-CN-Routing/REF/configs/Russia.conf
+https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf
 ```
 
-将真实 Raw 地址添加到 Shadowrocket 的远程配置功能中，下载后选择该配置。**这是配置地址，不是代理节点订阅地址**；更新规则不会提供节点。分支地址可随维护更新，固定提交便于复现；刷新前备份本地修改，不承诺客户端自动定时更新。
+将当前 Raw 地址添加到 Shadowrocket 的远程配置功能中，下载后选择该配置。**这是配置地址，不是代理节点订阅地址**；更新规则不会提供节点。分支地址可随维护更新，固定提交便于复现；刷新前备份本地修改，不承诺客户端自动定时更新。
 
-维护者可参考 [发布准备说明](PUBLISHING.md) 生成真实链接。
+维护者可参考 [维护与版本发布说明](PUBLISHING.md)。
 
 <a id="beta"></a>
 
@@ -126,7 +126,7 @@ https://raw.githubusercontent.com/OWNER/Shadowrocket-RU-CN-Routing/REF/configs/R
 
 ## 维护与贡献
 
-欢迎用中文、俄语或英语反馈俄罗斯网络测试结果、修正规则与改进文档。仓库发布后可通过 Issues 或 Pull Requests 参与，流程见 [贡献指南](CONTRIBUTING.md#zh-cn)。
+欢迎用中文、俄语或英语反馈俄罗斯网络测试结果、修正规则与改进文档。可通过 GitHub Issues 或 Pull Requests 参与，流程见 [贡献指南](CONTRIBUTING.md#zh-cn)。
 
 反馈请包含配置版本、Shadowrocket 版本、测试日期、运营商与网络类型、问题域名、期望与实际策略、复现步骤。地理信息按隐私需要提供；日志去除节点信息、订阅令牌、账号与无关访问记录。
 
