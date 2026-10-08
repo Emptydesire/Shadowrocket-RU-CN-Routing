@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md) · [Русский](README.ru.md) · **English**
 
-<img src="assets/banner.svg" width="100%" alt="Shadowrocket RU-CN routing rules — Russia v2.0 Beta" />
+<img src="assets/banner.svg" width="100%" alt="Shadowrocket RU-CN routing rules — Russia v1.0 Beta" />
 
 # Shadowrocket-RU-CN-Routing
 
@@ -10,7 +10,7 @@
 
 An experimental Shadowrocket configuration for use on Russian networks.
 
-**Russia v2.0 Beta · 340 rules · [MIT License](LICENSE)**
+**Russia v1.0 Beta · 340 rules · [MIT License](LICENSE)**
 
 [Overview](#overview) · [Routing](#routing) · [Get started](#quick-start) · [Beta notes](#beta) · [Contribute](#contributing) · [Legal & donations](#support)
 
@@ -19,7 +19,7 @@ An experimental Shadowrocket configuration for use on Russian networks.
 ---
 
 > [!IMPORTANT]
-> **The public repository is live.** The user-supplied Russia v2.0 Beta configuration is included unchanged as [Russia.conf](configs/Russia.conf). Its 340 rules have been checked statically; no Shadowrocket runtime or Russian-network testing has been performed. Use the active Raw link below to fetch the file.
+> **The public repository is live.** The Russia v1.0 Beta profile preserves the supplied routing rules; only its version comment is updated to v1.0 Beta. The configuration file is [Russia.conf](configs/Russia.conf). Its 340 rules have been checked statically; no Shadowrocket runtime or Russian-network testing has been performed. Use the active Raw link below to fetch the file.
 
 <a id="overview"></a>
 
@@ -27,7 +27,7 @@ An experimental Shadowrocket configuration for use on Russian networks.
 
 This is a Shadowrocket routing configuration for people **using the internet in Russia who already have their own proxy node or subscription**. It lets you proxy selected international traffic while keeping common Russian and Chinese services on direct connections when your proxy is on.
 
-Russia v2.0 Beta sends listed Russian banks, payment services, government sites, universities, mobile operators, transport, shopping, and media, plus listed Chinese services such as WeChat, Alipay, and Taobao, through **DIRECT**. General Google domains also use DIRECT. YouTube, YouTube Music, X, Instagram, Telegram, and other listed proxy exceptions use **PROXY**. Traffic not matched by earlier domain or regional rules reaches `FINAL,PROXY`.
+Russia v1.0 Beta sends listed Russian banks, payment services, government sites, universities, mobile operators, transport, shopping, and media, plus listed Chinese services such as WeChat, Alipay, and Taobao, through **DIRECT**. General Google domains also use DIRECT. YouTube, YouTube Music, X, Instagram, Telegram, and other listed proxy exceptions use **PROXY**. Traffic not matched by earlier domain or regional rules reaches `FINAL,PROXY`.
 
 **DIRECT** uses your normal network connection. **PROXY** uses the node you select in Shadowrocket. This project supplies routing rules; it does not provide a VPN service, proxy nodes, or node subscriptions.
 
@@ -75,12 +75,12 @@ Static inspection counted **340 rules**: 333 `DOMAIN-SUFFIX`, 4 `IP-CIDR`, 2 `GE
 
 | File | Purpose | Availability |
 | :--- | :--- | :--- |
-| [Russia.conf](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) | Russia v2.0 Beta profile · Raw download | Included; client and network testing pending |
+| [⬇ Download Russia.conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Russia.conf) | Russia v1.0 Beta attachment | Included; client and network testing pending |
 
 ### Import the included Russia Beta
 
 1. Back up your current Shadowrocket configuration and any local edits.
-2. Locate [configs/Russia.conf](configs/Russia.conf) in this package. It is the original user-supplied file, preserved unchanged.
+2. Locate [configs/Russia.conf](configs/Russia.conf) in this package. Its routing rules match the supplied file; only the version comment is updated to v1.0 Beta.
 3. In Shadowrocket's configuration area, import the local `.conf` file. Interface labels may vary by app version; this import has not been tested in the client.
 4. Select the imported profile, use configuration-based routing, and select your own working proxy node.
 5. Check a local service, a Google service, and YouTube to confirm that the intended routes work on your network.
@@ -103,7 +103,7 @@ A configuration URL supplies routing settings; **it is not a proxy-node subscrip
 
 ## Beta notes
 
-Russia v2.0 Beta has **not been tested in Shadowrocket or on Russian networks** during preparation of this package. The included configuration received static inspection only; it is preserved unchanged from the user-supplied source.
+Russia v1.0 Beta has **not been tested in Shadowrocket or on Russian networks** during preparation of this package. The included configuration received static inspection only; it is preserved unchanged from the user-supplied source.
 
 - Availability and routing can vary by operator, network restrictions, DNS behavior, application version, and proxy node.
 - `DIRECT` expresses a route choice; it does not guarantee that a site will load. In particular, direct access to Google services may fail on some Russian networks.
