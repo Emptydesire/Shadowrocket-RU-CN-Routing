@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="360" viewBox="0 0 1440 360" role="img" aria-labelledby="title desc">
+  <title id="title">Shadowrocket RU CN Routing</title>
+  <desc id="desc">A routing profile for use in Russia. Russian and Chinese services direct, selected services through a proxy. Russia v2.0 Beta.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101d35"/><stop offset="1" stop-color="#111526"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#53e3c2"/><stop offset="1" stop-color="#8eb5ff"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M 36 0 L 0 0 0 36" fill="none" stroke="#a4b8d6" stroke-opacity=".045"/></pattern>
+  </defs>
+  <rect width="1440" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1440" height="360" rx="24" fill="url(#grid)"/>
+  <rect x="56" y="53" width="38" height="4" rx="2" fill="url(#accent)"/>
+  <text x="109" y="62" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3" fill="#a7b7ce">RULE-BASED ROUTING</text>
+  <text x="56" y="137" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-1.5" fill="#f7faff">Shadowrocket</text>
+  <text x="56" y="201" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-1" fill="url(#accent)">Russia / Beta</text>
+  <text x="57" y="242" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#a7b7ce">For Russia. Clear routing.</text>
+  <rect x="56" y="277" width="181" height="31" rx="15.5" fill="#252c3c" stroke="#56627a"/>
+  <text x="146.5" y="298" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#f0ca78">RUSSIA v2.0 BETA</text>
+  <rect x="247" y="277" width="75" height="31" rx="15.5" fill="#192e35" stroke="#355553"/>
+  <text x="284.5" y="298" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#81e4cb">MIT</text>
+  <g stroke="#57708c" stroke-width="2" fill="none">
+    <path d="M870 180 H936 V111 H1010"/><path d="M936 180 V249 H1010"/>
+  </g>
+  <circle cx="936" cy="180" r="5" fill="#9aaeca"/>
+  <rect x="690" y="129" width="180" height="102" rx="18" fill="#1b2c43" stroke="#39526d"/>
+  <text x="780" y="169" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="2" fill="#9caec6">PROFILE</text>
+  <text x="780" y="206" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#eef5ff">RU</text>
+  <rect x="1010" y="67" width="354" height="88" rx="16" fill="#162f36" stroke="#316b68"/>
+  <circle cx="1042" cy="111" r="6" fill="#65dfbc"/>
+  <text x="1063" y="108" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#88ecd0">DIRECT</text>
+  <text x="1063" y="131" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#a6c4c5">LOCAL CONNECTION</text>
+  <rect x="1010" y="205" width="354" height="88" rx="16" fill="#1c2b49" stroke="#3c5885"/>
+  <circle cx="1042" cy="249" r="6" fill="#83b0ff"/>
+  <text x="1063" y="246" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#a6c9ff">PROXY</text>
+  <text x="1063" y="269" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#a8bbd8">YOUR SELECTED NODE</text>
+</svg>
