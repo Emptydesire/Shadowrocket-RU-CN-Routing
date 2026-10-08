@@ -4,7 +4,7 @@
 
 <img src="assets/banner-inkwash-final.svg" alt="Shadowrocket RU-CN routing rules — Russia v1.0 Beta" width="100%">
 
-# Shadowrocket-RU-CN-Routing
+# Shadowrocket-RU-CN-Routing 1.0
 
 **面向俄罗斯网络 · 俄罗斯与中国服务直连 · YouTube 按规则代理**
 
@@ -80,7 +80,7 @@ Google 搜索、Gmail、Maps、Drive、Translate、Photos、Play 等非 YouTube 
 
 | 配置 | 文件 | 验证状态 |
 | :--- | :--- | :--- |
-| **Russia v1.0 Beta** | [仓库文件](configs/Russia.conf) · [⬇ 下载 .conf 附件](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Russia.conf) · [Raw 远程配置](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) | v1.0 Beta；客户端与网络待测 |
+| **Russia v1.0 Beta** | [仓库文件](configs/Shadowrocket-RU-CN-Routing.1.0.conf) · [⬇ 下载 .conf 附件](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.conf) · [Raw 远程配置](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.conf) | v1.0 Beta；客户端与网络待测 |
 
 **340 条规则**：333 条域名后缀、4 条 IP 网段、2 条 GEOIP、1 条最终规则；共 291 条 DIRECT、49 条 PROXY。未发现完全重复的规则行。统计不等于 340 个服务，也不代表实测通过。完整记录见 [静态核对报告](docs/VALIDATION.md#zh-cn)。
 
@@ -89,7 +89,7 @@ Google 搜索、Gmail、Maps、Drive、Translate、Photos、Play 等非 YouTube 
 Shadowrocket 支持通过 URL 或 iCloud Drive 导入规则文件（[开发者 App Store 介绍](https://apps.apple.com/us/app/shadowrocket/id932747118)）。
 
 1. 备份当前配置，准备你自己的可用代理节点。
-2. 保存本文件包中的 `configs/Russia.conf`，在 Shadowrocket 的配置页面导入。
+2. 保存本文件包中的 `configs/Shadowrocket-RU-CN-Routing.1.0.conf`，在 Shadowrocket 的配置页面导入。
 3. 选择 Russia 配置，将路由方式设为按配置规则处理，并选择可用代理节点。
 4. 检查连接日志中的匹配规则与实际策略，分别测试本地常用服务、Google 与 YouTube。
 5. 记录网络、版本与具体域名；出现回归时切回备份并反馈。
@@ -98,12 +98,12 @@ Shadowrocket 支持通过 URL 或 iCloud Drive 导入规则文件（[开发者 A
 
 ### Raw 远程配置
 
-已发布的 [Russia.conf Raw 文件](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) 可用于直接下载，或添加到 Shadowrocket 的远程配置中。Raw 地址提供原始配置内容，不是 `blob` 预览页（[GitHub 官方说明](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content)）。
+已发布的 [Shadowrocket-RU-CN-Routing.1.0.conf Raw 文件](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.conf) 可用于直接下载，或添加到 Shadowrocket 的远程配置中。Raw 地址提供原始配置内容，不是 `blob` 预览页（[GitHub 官方说明](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content)）。
 
 当前 `main` 分支的 Raw 地址：
 
 ```text
-https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf
+https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.conf
 ```
 
 将当前 Raw 地址添加到 Shadowrocket 的远程配置功能中，下载后选择该配置。**这是配置地址，不是代理节点订阅地址**；更新规则不会提供节点。分支地址可随维护更新，固定提交便于复现；刷新前备份本地修改，不承诺客户端自动定时更新。
