@@ -1,75 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="360" viewBox="0 0 1440 360" role="img" aria-labelledby="title desc">
-  <title id="title">Shadowrocket · Russia Routing</title>
-  <desc id="desc">A Chinese-inspired ink landscape banner for the Russia v1.0 Beta Shadowrocket routing profile.</desc>
+  <title id="title">Shadowrocket · 俄罗斯分流 · Маршрутизация в России · Russia Routing</title>
+  <desc id="desc">Shadowrocket Russia v1.0 Beta routing profile. 简体中文、Русский、English 三语说明：本地服务直连，所选流量经代理。 Три языка: локальные сервисы напрямую, выбранный трафик через прокси. Three languages: local services direct, selected traffic through proxy.</desc>
   <defs>
-    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#f6efdf"/><stop offset="1" stop-color="#e9ddc3"/>
-    </linearGradient>
-    <linearGradient id="lacquer" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#20394a"/><stop offset="1" stop-color="#112532"/>
-    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6efdf"/><stop offset="1" stop-color="#e9ddc3"/></linearGradient>
+    <linearGradient id="lacquer" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#20394a"/><stop offset="1" stop-color="#112532"/></linearGradient>
     <linearGradient id="gold"><stop stop-color="#a97838"/><stop offset=".5" stop-color="#d6b36d"/><stop offset="1" stop-color="#9c6a34"/></linearGradient>
-    <linearGradient id="jade"><stop stop-color="#4c8978"/><stop offset="1" stop-color="#8db7a0"/></linearGradient>
-    <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse">
-      <circle cx="3" cy="5" r=".7" fill="#795c37" opacity=".09"/>
-      <circle cx="19" cy="17" r=".6" fill="#795c37" opacity=".07"/>
-      <path d="M0 26h28" stroke="#fff" stroke-opacity=".13"/>
-    </pattern>
+    <pattern id="grain" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="3" cy="5" r=".7" fill="#795c37" opacity=".09"/><circle cx="19" cy="17" r=".6" fill="#795c37" opacity=".07"/><path d="M0 26h28" stroke="#fff" stroke-opacity=".13"/></pattern>
   </defs>
-
   <rect width="1440" height="360" rx="24" fill="url(#paper)"/>
   <rect x="12" y="12" width="1416" height="336" rx="18" fill="none" stroke="#b99154" stroke-opacity=".62"/>
   <rect width="1440" height="360" rx="24" fill="url(#grain)"/>
 
-  <!-- Ink landscape and distant clouds -->
+  <!-- Ink landscape -->
   <path d="M600 332c62-42 103-45 154-10 30-43 74-67 123-35 43-58 92-79 157-18 52-42 110-50 180-8v99H600z" fill="#cdbd9d" opacity=".45"/>
   <path d="M823 345c66-62 107-91 151-77 22 7 39 24 53 45-38-21-65-13-87 14 50-23 103-9 141 26 49-50 115-56 190-2v9H823z" fill="#a99c7e" opacity=".42"/>
   <path d="M915 333l55-78 31 40 34-54 58 93M1133 335l45-63 31 38 39-48 60 75" fill="none" stroke="#758273" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/>
   <path d="M770 311c41-15 81-15 120 0m320-11c38-13 73-13 107 0" fill="none" stroke="#f9f4e8" stroke-width="3" opacity=".85"/>
 
-  <!-- Title block -->
+  <!-- Trilingual title block -->
   <path d="M56 58h44" stroke="#a74132" stroke-width="4" stroke-linecap="round"/>
-  <text x="112" y="64" font-family="Kaiti SC, STKaiti, serif" font-size="17" letter-spacing="2.5" fill="#75664d">俄中分流 · ROUTING PROFILE</text>
-  <text x="52" y="151" font-family="Apple Chancery, Zapfino, STXingkai, cursive" font-size="66" font-style="italic" font-weight="600" letter-spacing="-1" fill="#183345">Shadowrocket</text>
-  <text x="57" y="202" font-family="Kaiti SC, STKaiti, serif" font-size="31" fill="#9c3e32">俄罗斯使用 · Russia Routing</text>
-  <text x="59" y="238" font-family="Kaiti SC, STKaiti, serif" font-size="18" fill="#53656a">山海有路 · 规则分流 · 直连与代理并行</text>
-  <text x="59" y="267" font-family="Georgia, serif" font-size="13" letter-spacing="1.5" fill="#65706a">DIRECT FOR LOCAL SERVICES  ·  PROXY FOR SELECTED TRAFFIC</text>
+  <text x="112" y="64" font-family="Kaiti SC, STKaiti, serif" font-size="14" letter-spacing="1.2" fill="#75664d">三语路由 · МАРШРУТИЗАЦИЯ · TRILINGUAL ROUTING</text>
+  <text x="52" y="145" font-family="Apple Chancery, Zapfino, STXingkai, cursive" font-size="66" font-style="italic" font-weight="600" letter-spacing="-1" fill="#183345">Shadowrocket</text>
+  <text x="58" y="194" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="22" fill="#9c3e32">俄罗斯分流 · Правила для России · Russia Routing</text>
+  <text x="59" y="228" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="14" fill="#435e5c">本地服务直连 · Местные сервисы DIRECT · Local services DIRECT</text>
+  <text x="59" y="252" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="14" fill="#435e5c">YouTube 走代理 · YouTube через PROXY · YouTube via PROXY</text>
 
   <!-- Version plaque -->
-  <rect x="58" y="292" width="196" height="34" rx="4" fill="url(#lacquer)"/>
-  <path d="M64 297h184v24H64z" fill="none" stroke="url(#gold)" stroke-width="1"/>
-  <text x="156" y="314" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" letter-spacing="1.2" fill="#f0d79e">RUSSIA  ·  1.0 BETA</text>
-  <rect x="266" y="292" width="72" height="34" rx="4" fill="#f5ecd8" stroke="#9c3e32"/>
-  <text x="302" y="314" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" letter-spacing="1" fill="#9c3e32">MIT</text>
+  <rect x="58" y="289" width="259" height="36" rx="4" fill="url(#lacquer)"/>
+  <path d="M64 294h247v26H64z" fill="none" stroke="url(#gold)" stroke-width="1"/>
+  <text x="187.5" y="312" text-anchor="middle" font-family="Georgia, Kaiti SC, serif" font-size="10.5" font-weight="700" letter-spacing=".4" fill="#f0d79e">RUSSIA · РОССИЯ · 俄罗斯 · 1.0 BETA</text>
+  <rect x="329" y="289" width="72" height="36" rx="4" fill="#f5ecd8" stroke="#9c3e32"/>
+  <text x="365" y="312" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" letter-spacing="1" fill="#9c3e32">MIT</text>
 
-  <!-- Routing diagram, ink-blue paths -->
-  <g stroke="#55716d" stroke-width="2" fill="none" opacity=".88">
-    <path d="M851 180h61V112h62"/>
-    <path d="M912 180v69h62"/>
-  </g>
+  <!-- Routing diagram -->
+  <g stroke="#55716d" stroke-width="2" fill="none" opacity=".88"><path d="M851 180h61V112h62"/><path d="M912 180v69h62"/></g>
   <circle cx="912" cy="180" r="5" fill="#ad4736"/>
   <rect x="702" y="137" width="149" height="86" rx="10" fill="url(#lacquer)"/>
   <rect x="708" y="143" width="137" height="74" rx="7" fill="none" stroke="url(#gold)" stroke-opacity=".85"/>
-  <text x="776" y="169" text-anchor="middle" font-family="Kaiti SC, STKaiti, serif" font-size="13" letter-spacing="2" fill="#d9c699">PROFILE</text>
+  <text x="776" y="169" text-anchor="middle" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="13" letter-spacing="1.4" fill="#d9c699">配置 · ПРОФИЛЬ</text>
   <text x="776" y="202" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#fbf2dc">RU</text>
 
   <rect x="974" y="72" width="350" height="80" rx="10" fill="#e7eee3" stroke="#668977" stroke-width="1.5"/>
   <path d="M990 82h318" stroke="#c2a267" stroke-width="1"/>
   <circle cx="1007" cy="112" r="6" fill="#4b8977"/>
-  <text x="1028" y="109" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="23" font-weight="700" fill="#285b4d">DIRECT</text>
-  <text x="1028" y="132" font-family="Georgia, serif" font-size="12" letter-spacing=".8" fill="#55746a">LOCAL CONNECTION</text>
+  <text x="1028" y="109" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#285b4d">DIRECT</text>
+  <text x="1028" y="132" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="11.2" fill="#55746a">直连 · НАПРЯМУЮ · LOCAL CONNECTION</text>
 
   <rect x="974" y="209" width="350" height="80" rx="10" fill="#e7e9ed" stroke="#536d80" stroke-width="1.5"/>
   <path d="M990 219h318" stroke="#c2a267" stroke-width="1"/>
   <circle cx="1007" cy="249" r="6" fill="#496a91"/>
-  <text x="1028" y="246" font-family="Apple Chancery, Georgia, serif" font-size="23" font-weight="700" fill="#294b70">PROXY</text>
-  <text x="1028" y="269" font-family="Georgia, serif" font-size="12" letter-spacing=".8" fill="#5d7185">YOUR SELECTED NODE</text>
+  <text x="1028" y="246" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#294b70">PROXY</text>
+  <text x="1028" y="269" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="11.2" fill="#5d7185">代理 · ЧЕРЕЗ ПРОКСИ · SELECTED NODE</text>
 
-  <!-- Seal -->
-  <g transform="translate(1352 276) rotate(-8)">
-    <rect x="-33" y="-33" width="66" height="66" rx="5" fill="#a13c31"/>
-    <rect x="-27" y="-27" width="54" height="54" rx="3" fill="none" stroke="#f2d9ad" stroke-width="1.5"/>
-    <text x="0" y="-1" text-anchor="middle" font-family="Kaiti SC, STKaiti, serif" font-size="19" font-weight="700" fill="#fff0d2">路由</text>
-    <text x="0" y="17" text-anchor="middle" font-family="Georgia, serif" font-size="8" letter-spacing="1" fill="#f4dfbd">RULES</text>
+  <!-- Cinnabar seal -->
+  <g transform="translate(1370 311) rotate(-8)">
+    <rect x="-29" y="-29" width="58" height="58" rx="5" fill="#a13c31"/>
+    <rect x="-23" y="-23" width="46" height="46" rx="3" fill="none" stroke="#f2d9ad" stroke-width="1.5"/>
+    <text x="0" y="7" text-anchor="middle" font-family="Kaiti SC, STKaiti, serif" font-size="19" font-weight="700" fill="#fff0d2">路由</text>
   </g>
 </svg>
