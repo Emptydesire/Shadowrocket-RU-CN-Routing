@@ -4,7 +4,7 @@
 
 <img src="assets/banner-inkwash-final.svg" alt="Shadowrocket — маршрутизация для использования в России, Russia v1.0 Beta" width="100%">
 
-# Shadowrocket-RU-CN-Routing 1.0
+# Shadowrocket-RU-CN-Routing 1.0 Beta
 
 **Российские сервисы напрямую. YouTube через прокси.**
 
@@ -79,16 +79,16 @@
 
 | Конфигурация | Статус | Скачать или открыть |
 | :--- | :--- | :--- |
-| Russia v1.0 Beta | Исходный файл без изменений; статическая проверка выполнена | [Файл](configs/Shadowrocket-RU-CN-Routing.1.0.conf) · [⬇ Скачать Shadowrocket-RU-CN-Routing.1.0.conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.conf) · [Raw для удалённой конфигурации](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.conf) |
+| Russia v1.0 Beta | Исходный файл без изменений; статическая проверка выполнена | [Файл](configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) · [⬇ Скачать Shadowrocket-RU-CN-Routing.1.0.Beta.conf](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) · [Raw для удалённой конфигурации](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) |
 
-Файл опубликован по [действующей Raw-ссылке](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.conf). Её можно использовать для скачивания или добавить в удалённые конфигурации Shadowrocket. Подробности о Raw-файлах — в [официальной справке GitHub](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content).
+Файл опубликован по [действующей Raw-ссылке](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf). Её можно использовать для скачивания или добавить в удалённые конфигурации Shadowrocket. Подробности о Raw-файлах — в [официальной справке GitHub](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content).
 
 ### Raw-ссылка для ветки `main`
 
 Текущий Raw-адрес для ветки `main`:
 
 ```text
-https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.conf
+https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf
 ```
 
 Ссылка на ветку может со временем отдавать обновлённый файл; ссылка на конкретный коммит фиксирует его версию.
@@ -100,7 +100,7 @@ https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/co
 Для тестирования конфигурации:
 
 1. Сохраните резервную копию своей текущей конфигурации.
-2. Откройте раздел конфигураций Shadowrocket и импортируйте локальный `Shadowrocket-RU-CN-Routing.1.0.conf` или добавьте его Raw-адрес как удалённую конфигурацию. Названия элементов интерфейса зависят от версии и языка приложения.
+2. Откройте раздел конфигураций Shadowrocket и импортируйте локальный `Shadowrocket-RU-CN-Routing.1.0.Beta.conf` или добавьте его Raw-адрес как удалённую конфигурацию. Названия элементов интерфейса зависят от версии и языка приложения.
 3. Вручную выберите импортированную конфигурацию **Russia v1.0 Beta**.
 4. Выберите режим маршрутизации по конфигурации и активируйте свой рабочий прокси.
 5. Проверьте в журнале соединений маршруты для местного сервиса, Google и YouTube. Перед использованием банковских сервисов убедитесь, что нужные соединения идут через DIRECT.
