@@ -17,7 +17,7 @@ Shadowrocket-RU-CN-Routing/
 ├── .gitignore
 ├── assets/banner.svg
 ├── configs/
-│   ├── Russia.conf           # 用户提供的原文件，内容未修改
+│   ├── Russia.conf           # 用户提供的原规则，版本注释已更新为 v1.0 Beta
 │   └── README.md             # 三语配置说明
 └── docs/VALIDATION.md        # 三语静态核对报告
 ```
@@ -27,9 +27,9 @@ Shadowrocket-RU-CN-Routing/
 ## 当前状态
 
 - 公开 GitHub 仓库：[Emptydesire/Shadowrocket-RU-CN-Routing](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing)。
-- [Russia v2.0 Beta 原配置](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) 已收录，SHA-256 与提供的原文件相同。
+- [Russia v1.0 Beta 配置](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) 已收录；规则内容保留，仅版本注释已更新。
 - 静态核对了 340 条规则、关键规则顺序及文件中的凭据风险。报告见 [docs/VALIDATION.md](docs/VALIDATION.md)。
-- 尚未在 Shadowrocket 中导入，也未在俄罗斯运营商网络中进行实际测试。未创建正式 GitHub Release 或版本标签。
+- 尚未在 Shadowrocket 中导入，也未在俄罗斯运营商网络中进行实际测试。已创建 GitHub Pre-release：`v1.0-beta`，附件为 `Russia.conf`。
 
 ## 更新配置
 
@@ -47,6 +47,6 @@ https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/co
 
 ## 创建正式 Beta Release 时
 
-若维护者决定创建 GitHub Release，将其标记为 **Pre-release**，记录对应提交、测试范围、已知限制和完整配置来源。创建前再次确认 README、原文件链接与更新日志一致。
+当前 `v1.0-beta` Release 已标记为 **Pre-release**，并附有 `Russia.conf` 下载文件。后续版本应记录提交、测试范围与已知限制，并同步三语 README、配置说明与更新日志。
 
 [返回中文首页](README.zh-CN.md)
