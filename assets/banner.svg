@@ -37,7 +37,7 @@
   <circle cx="912" cy="180" r="5" fill="#ad4736"/>
   <rect x="702" y="137" width="149" height="86" rx="10" fill="url(#lacquer)"/>
   <rect x="708" y="143" width="137" height="74" rx="7" fill="none" stroke="url(#gold)" stroke-opacity=".85"/>
-  <text x="776" y="169" text-anchor="middle" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="13" letter-spacing="1.4" fill="#d9c699">PROFILE · ПРОФИЛЬ</text>
+  <text x="776" y="169" text-anchor="middle" font-family="Kaiti SC, STKaiti, Georgia, serif" font-size="10" letter-spacing=".5" fill="#d9c699">PROFILE · ПРОФИЛЬ</text>
   <text x="776" y="202" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#fbf2dc">RU</text>
 
   <rect x="974" y="72" width="350" height="80" rx="10" fill="#e7eee3" stroke="#668977" stroke-width="1.5"/>
