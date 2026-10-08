@@ -1,6 +1,6 @@
-# 发布准备说明
+# 维护与版本发布说明
 
-当前文件包已包含俄罗斯原配置与三语文档，可上传为开源项目初稿。尚未通过 GitHub 发布，也未在客户端或俄罗斯当地网络实测。
+本仓库已在 GitHub 公开：<https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing>。默认分支为 `main`，原文件以 `configs/Russia.conf` 发布。此说明记录后续维护流程；不表示已经完成 Shadowrocket 导入或俄罗斯当地网络测试。
 
 ## 文件结构
 
@@ -12,54 +12,41 @@ Shadowrocket-RU-CN-Routing/
 ├── LICENSE                  # MIT
 ├── SUPPORT.md               # 三语法律声明与自愿捐赠说明
 ├── CONTRIBUTING.md          # 三语贡献指南
-├── CHANGELOG.md              # 尚未发布的变更
+├── CHANGELOG.md              # 变更记录
 ├── PUBLISHING.md             # 本说明
 ├── .gitignore
-├── assets/
-│   └── banner.svg            # 自带横幅
+├── assets/banner.svg
 ├── configs/
 │   ├── Russia.conf           # 用户提供的原文件，内容未修改
 │   └── README.md             # 三语配置说明
-└── docs/
-    └── VALIDATION.md         # 三语静态核对报告
+└── docs/VALIDATION.md        # 三语静态核对报告
 ```
 
-本仓库仅测试俄罗斯场景，兼顾中国服务直连。中国模式将由维护者单独开源，不需要在本仓库补充中国配置。
+本仓库仅发布俄罗斯使用配置，兼顾中国服务直连。中国模式由维护者单独开源。
 
-## 1. 创建仓库并上传
+## 当前状态
 
-在自己的 GitHub 账户或目标组织下创建公开仓库 `Shadowrocket-RU-CN-Routing`，将本文件夹的**内容**上传到仓库根目录，保留子目录。避免再包一层同名文件夹。已有同名仓库时，先核对现有文件并合并。
+- 公开 GitHub 仓库：[Emptydesire/Shadowrocket-RU-CN-Routing](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing)。
+- [Russia v2.0 Beta 原配置](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) 已收录，SHA-256 与提供的原文件相同。
+- 静态核对了 340 条规则、关键规则顺序及文件中的凭据风险。报告见 [docs/VALIDATION.md](docs/VALIDATION.md)。
+- 尚未在 Shadowrocket 中导入，也未在俄罗斯运营商网络中进行实际测试。未创建正式 GitHub Release 或版本标签。
 
-建议仓库简介：
+## 更新配置
+
+1. 只在确认域名来源与所需路由后调整规则。YouTube 专用 PROXY 例外应放在 Google 通用 DIRECT 规则之前，并留意共享的 Google API 与媒体域名。
+2. 检查变更没有加入节点、订阅、凭据或未经许可的第三方规则。
+3. 在 Shadowrocket 导入，查看连接日志并按运营商记录实际通过、失败和未测项目。只做静态检查时，不要描述成真实网络测试通过。
+4. 同步三语 README、`configs/README.md`、`docs/VALIDATION.md` 与 `CHANGELOG.md`，写清楚测试范围和已知限制。
+5. 更新默认分支后，固定的 `main` Raw 地址会提供最新配置；需要复现实验时，请使用对应的 Git commit SHA 构造固定版本链接。
+
+当前 Raw 下载地址：
 
 ```text
-Shadowrocket for Russia · 俄罗斯网络分流 · Правила для России · Russian & Chinese services DIRECT · v2.0 Beta
+https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf
 ```
 
-默认首页为 English，中文与俄语入口均在顶部。
+## 创建正式 Beta Release 时
 
-## 2. 确认配置与测试状态
-
-已收录 `configs/Russia.conf`，与用户提供的原文件字节一致。340 条规则的结构、关键顺序与潜在敏感信息已静态核对，详情见 [核对报告](docs/VALIDATION.md#zh-cn)。
-
-仍需在 Shadowrocket 中实际导入，选择自己的节点，检查俄罗斯机构、中国服务、Google 与 YouTube 的匹配日志。按 [贡献指南](CONTRIBUTING.md#zh-cn) 记录实际通过、失败和未测试的范围；不要将静态检查写成网络测试通过。后续引入第三方规则时核对来源与许可。
-
-## 3. 启用真实 Raw 链接
-
-文件上传后，进入 GitHub 文件页面，使用 **Raw** 或原始文件下载按钮取得链接。将三语 README 中的 `OWNER` 与 `REF` 模板替换为真实信息，并增加对应 Raw 下载链接。
-
-```text
-https://raw.githubusercontent.com/OWNER/Shadowrocket-RU-CN-Routing/REF/configs/Russia.conf
-```
-
-这是占位格式。`REF` 为实际分支、标签或提交：分支用于持续更新，固定提交便于复现版本。复制 GitHub 提供的 Raw 地址可减少拼写错误，不要使用 `github.com/.../blob/...` 预览页地址。
-
-在未登录状态确认链接返回预期配置纯文本，再从 Shadowrocket 下载、启用并检查匹配。参考 [GitHub 官方 Raw 文件说明](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content)。
-
-## 4. 标注 Beta 发布
-
-发布成功后同步三语 README、配置说明和更新日志中的 GitHub 状态，添加真实仓库链接。若创建 Russia v2.0 Beta 的 GitHub Release，应标记为 **Pre-release** 并说明测试范围与已知限制。
-
-保留共享 Google / YouTube 域名与地区兜底限制；没有当地实测时继续明确标注，不声称所有服务可达。
+若维护者决定创建 GitHub Release，将其标记为 **Pre-release**，记录对应提交、测试范围、已知限制和完整配置来源。创建前再次确认 README、原文件链接与更新日志一致。
 
 [返回中文首页](README.zh-CN.md)
