@@ -2,9 +2,9 @@
 
 ## Russia v1.0 Beta · 首个可下载预发布 · Первый предварительный выпуск · 2026-10-09
 
-- **简体中文：** 发布 GitHub Pre-release `v1.0-beta`，并附加可直接下载的 `Russia.conf`。为统一版本号，仅将配置文件首行版本注释改为 v1.0 Beta，分流规则保持不变；SHA-256 已更新至静态核对报告。仍未完成 Shadowrocket 导入或俄罗斯当地网络实测。捐赠网络新增 Ethereum，代币仍仅接受 USDT 或 USDC。
-- **Русский:** Опубликован предварительный выпуск GitHub `v1.0-beta` с файлом `Russia.conf` для прямого скачивания. Для единообразия обновлён только комментарий версии в первой строке; правила маршрутизации сохранены, SHA-256 обновлён в отчёте. Импорт в Shadowrocket и работу в российских сетях не проверяли. Добавлена сеть Ethereum для пожертвований; принимаются только USDT или USDC.
-- **English:** Published the GitHub `v1.0-beta` pre-release with `Russia.conf` as a direct-download asset. Only the first-line version comment was normalized; routing rules remain unchanged, and the validation report records the updated SHA-256. Shadowrocket import and Russian-network behavior remain untested. Ethereum was added as a donation network; only USDT or USDC are accepted.
+- **简体中文：** 发布 GitHub Pre-release `v1.0-beta`，并附加可直接下载的 `Shadowrocket-RU-CN-Routing.1.0.conf`。为统一版本号，仅将配置文件首行版本注释改为 v1.0 Beta，分流规则保持不变；SHA-256 已更新至静态核对报告。仍未完成 Shadowrocket 导入或俄罗斯当地网络实测。捐赠网络新增 Ethereum，代币仍仅接受 USDT 或 USDC。
+- **Русский:** Опубликован предварительный выпуск GitHub `v1.0-beta` с файлом `Shadowrocket-RU-CN-Routing.1.0.conf` для прямого скачивания. Для единообразия обновлён только комментарий версии в первой строке; правила маршрутизации сохранены, SHA-256 обновлён в отчёте. Импорт в Shadowrocket и работу в российских сетях не проверяли. Добавлена сеть Ethereum для пожертвований; принимаются только USDT или USDC.
+- **English:** Published the GitHub `v1.0-beta` pre-release with `Shadowrocket-RU-CN-Routing.1.0.conf` as a direct-download asset. Only the first-line version comment was normalized; routing rules remain unchanged, and the validation report records the updated SHA-256. Shadowrocket import and Russian-network behavior remain untested. Ethereum was added as a donation network; only USDT or USDC are accepted.
 
 ## Initial public publication · 首次公开 · Первая публикация · 2026-10-08
 
