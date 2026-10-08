@@ -2,7 +2,7 @@
 
 **简体中文**　 | 　[Русский](README.ru.md)　 | 　[English](README.md)
 
-<img src="assets/banner.svg?v=1.0-beta" alt="Shadowrocket RU CN Routing · 俄罗斯网络分流 · Russia v1.0 Beta" width="100%">
+<img src="assets/banner-v1.svg" alt="Shadowrocket RU CN Routing · 俄罗斯网络分流 · Russia v1.0 Beta" width="100%">
 
 # Shadowrocket-RU-CN-Routing
 
