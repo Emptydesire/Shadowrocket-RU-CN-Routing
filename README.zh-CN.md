@@ -2,13 +2,13 @@
 
 **简体中文**　 | 　[Русский](README.ru.md)　 | 　[English](README.md)
 
-<img src="assets/banner.svg" alt="Shadowrocket RU CN Routing · 俄罗斯网络分流 · Russia v2.0 Beta" width="100%">
+<img src="assets/banner.svg" alt="Shadowrocket RU CN Routing · 俄罗斯网络分流 · Russia v1.0 Beta" width="100%">
 
 # Shadowrocket-RU-CN-Routing
 
 **面向俄罗斯网络 · 俄罗斯与中国服务直连 · YouTube 按规则代理**
 
-`Russia v2.0 Beta`　 `340 条规则`　 [**MIT License**](LICENSE)
+`Russia v1.0 Beta`　 `340 条规则`　 [**MIT License**](LICENSE)
 
 [分流策略](#routing) · [配置与使用](#quick-start) · [Beta 说明](#beta) · [参与维护](#contributing) · [法律与捐赠](#support)
 
@@ -17,7 +17,7 @@
 ---
 
 > [!IMPORTANT]
-> **项目已发布到 GitHub。** 仓库包含用户提供的 Russia v2.0 Beta 原文件，内容未修改；已完成规则结构、数量与关键顺序的静态核对。尚未在 Shadowrocket 中实际导入，也未在俄罗斯当地网络实测。可使用下方 Raw 链接下载。
+> **项目已发布到 GitHub。** 仓库收录 Russia v1.0 Beta 配置，规则内容保持不变，仅将文件中的版本注释统一为 v1.0 Beta；已完成规则结构、数量与关键顺序的静态核对。尚未在 Shadowrocket 中实际导入，也未在俄罗斯当地网络实测。可使用下方 Raw 链接下载。
 
 <a id="overview"></a>
 
@@ -25,7 +25,7 @@
 
 这是给**在俄罗斯使用 Shadowrocket、并且已有自己的代理节点或订阅**的用户准备的分流配置。它解决的是：开启代理访问所需服务时，让常用俄罗斯网站和中国服务仍按规则直连，同时把指定国际服务交给代理。
 
-Russia v2.0 Beta 会将俄罗斯银行、支付、政府、大学、运营商、交通、电商和媒体等域名，以及微信、支付宝、淘宝等中国服务设为 **DIRECT**；Google 通用服务设为 **DIRECT**；配置中列出的 YouTube、YouTube Music、X、Instagram、Telegram 等代理例外设为 **PROXY**。经过这些规则后，未匹配的其余流量由 `FINAL,PROXY` 交给你自己的代理。
+Russia v1.0 Beta 会将俄罗斯银行、支付、政府、大学、运营商、交通、电商和媒体等域名，以及微信、支付宝、淘宝等中国服务设为 **DIRECT**；Google 通用服务设为 **DIRECT**；配置中列出的 YouTube、YouTube Music、X、Instagram、Telegram 等代理例外设为 **PROXY**。经过这些规则后，未匹配的其余流量由 `FINAL,PROXY` 交给你自己的代理。
 
 **DIRECT** 是通过当前网络直连；**PROXY** 是使用你在 Shadowrocket 中选择的节点。此项目只提供分流规则，不提供 VPN 服务、代理节点或节点订阅。
 
@@ -37,7 +37,7 @@ Russia v2.0 Beta 会将俄罗斯银行、支付、政府、大学、运营商、
 
 以下策略已与收录文件静态对照；服务是否可达、App 是否完整覆盖仍需实测。
 
-| 流量 / 服务 | Russia v2.0 Beta | 处理方式 |
+| 流量 / 服务 | Russia v1.0 Beta | 处理方式 |
 | :--- | :---: | :--- |
 | 俄罗斯银行、支付、政府、大学等 | **DIRECT** | 常用服务独立域名规则 |
 | 中国常用服务 | **DIRECT** | 微信、支付宝、淘宝等显式规则 |
@@ -80,7 +80,7 @@ Google 搜索、Gmail、Maps、Drive、Translate、Photos、Play 等非 YouTube 
 
 | 配置 | 文件 | 验证状态 |
 | :--- | :--- | :--- |
-| **Russia v2.0 Beta** | [仓库文件](configs/Russia.conf) · [Raw 直接下载](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) | 原文件已收录；客户端与网络待测 |
+| **Russia v1.0 Beta** | [仓库文件](configs/Russia.conf) · [⬇ 下载 .conf 附件](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Russia.conf) · [Raw 远程配置](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) | v1.0 Beta；客户端与网络待测 |
 
 **340 条规则**：333 条域名后缀、4 条 IP 网段、2 条 GEOIP、1 条最终规则；共 291 条 DIRECT、49 条 PROXY。未发现完全重复的规则行。统计不等于 340 个服务，也不代表实测通过。完整记录见 [静态核对报告](docs/VALIDATION.md#zh-cn)。
 
@@ -112,7 +112,7 @@ https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/co
 
 <a id="beta"></a>
 
-## Russia v2.0 Beta 说明
+## Russia v1.0 Beta 说明
 
 > [!WARNING]
 > 尚未完成 Shadowrocket 实际导入或俄罗斯当地运营商测试。DIRECT / PROXY 表示路由策略，不代表服务一定可达，也不代表所有 App 接口已经覆盖。
