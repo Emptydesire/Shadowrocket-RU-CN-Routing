@@ -2,7 +2,7 @@
 
 ### [简体中文](README.zh-CN.md) · **Русский** · [English](README.md)
 
-<img src="assets/banner-v1.svg" alt="Shadowrocket — маршрутизация для использования в России, Russia v1.0 Beta" width="100%">
+<img src="assets/banner-inkwash.svg" alt="Shadowrocket — маршрутизация для использования в России, Russia v1.0 Beta" width="100%">
 
 # Shadowrocket-RU-CN-Routing
 
