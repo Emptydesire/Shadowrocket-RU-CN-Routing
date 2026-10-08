@@ -80,7 +80,7 @@ Google 搜索、Gmail、Maps、Drive、Translate、Photos、Play 等非 YouTube 
 
 | 配置 | 文件 | 验证状态 |
 | :--- | :--- | :--- |
-| **Russia v1.0 Beta** | [仓库文件](configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) · [⬇ 下载 .conf 附件](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) · [Raw 远程配置](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) | v1.0 Beta；客户端与网络待测 |
+| **Russia v1.0 Beta** | 1. [仓库文件](configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf)<br>2. [⬇ 下载 .conf 附件](https://github.com/Emptydesire/Shadowrocket-RU-CN-Routing/releases/download/v1.0-beta/Shadowrocket-RU-CN-Routing.1.0.Beta.conf)<br>3. [Raw 远程配置](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Shadowrocket-RU-CN-Routing.1.0.Beta.conf) | v1.0 Beta；客户端与网络待测 |
 
 **340 条规则**：333 条域名后缀、4 条 IP 网段、2 条 GEOIP、1 条最终规则；共 291 条 DIRECT、49 条 PROXY。未发现完全重复的规则行。统计不等于 340 个服务，也不代表实测通过。完整记录见 [静态核对报告](docs/VALIDATION.md#zh-cn)。
 
