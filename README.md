@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md) · [Русский](README.ru.md) · **English**
 
-<img src="assets/banner.svg" width="100%" alt="Shadowrocket CN · RU — Russia v2.0 Beta routing profile" />
+<img src="assets/banner.svg" width="100%" alt="Shadowrocket RU-CN routing rules — Russia v2.0 Beta" />
 
 # Shadowrocket-RU-CN-Routing
 
@@ -19,7 +19,7 @@ An experimental Shadowrocket configuration for use on Russian networks.
 ---
 
 > [!IMPORTANT]
-> **Current status — documentation + Russia Beta package.** The user-supplied Russia v2.0 Beta configuration is included unchanged as [Russia.conf](configs/Russia.conf). Its 340 rules have been checked statically; no Shadowrocket runtime or Russian-network testing has been performed. This package is **not published on GitHub**, and the example Raw URL below is not an active download.
+> **The public repository is live.** The user-supplied Russia v2.0 Beta configuration is included unchanged as [Russia.conf](configs/Russia.conf). Its 340 rules have been checked statically; no Shadowrocket runtime or Russian-network testing has been performed. Use the active Raw link below to fetch the file.
 
 <a id="overview"></a>
 
@@ -71,11 +71,11 @@ Static inspection counted **340 rules**: 333 `DOMAIN-SUFFIX`, 4 `IP-CIDR`, 2 `GE
 
 ## Configuration downloads & setup
 
-**The Russia Beta file is included and can be imported locally for testing.** Check the [configuration status](configs/README.md#en) before use. Maintainers can use the [Chinese maintainer publishing guide](PUBLISHING.md) to prepare the GitHub repository and real Raw links.
+**The Russia Beta file is included and ready for local import and testing.** Check the [configuration status](configs/README.md#en) before use. Maintainers can use the [Chinese maintenance guide](PUBLISHING.md) for release and update notes.
 
 | File | Purpose | Availability |
 | :--- | :--- | :--- |
-| [configs/Russia.conf](configs/Russia.conf) | Russia v2.0 Beta profile | Included; client and network testing pending |
+| [Russia.conf](https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf) | Russia v2.0 Beta profile · Raw download | Included; client and network testing pending |
 
 ### Import the included Russia Beta
 
@@ -87,14 +87,14 @@ Static inspection counted **340 rules**: 333 `DOMAIN-SUFFIX`, 4 `IP-CIDR`, 2 `GE
 
 For reference, see [GitHub's guide to copying Raw file content](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-and-understanding-files#viewing-or-copying-the-raw-file-content) and the [developer's Shadowrocket listing](https://apps.apple.com/us/app/shadowrocket/id932747118), which describes configuration imports by URL.
 
-### Remote configuration after GitHub publication
+### Remote configuration
 
-Once the repository is published, download the `.conf` file or add its **Raw** URL in Shadowrocket's configuration area.
+Download the `.conf` file or add its **Raw** URL in Shadowrocket's configuration area.
 
-Replace `OWNER` with the actual GitHub account or organization and `REF` with the published branch, tag, or commit. The following is a **template, not a live download or subscription link**; it works only after the real repository and file are published.
+This is the active Raw URL for the `main` branch:
 
 ```text
-https://raw.githubusercontent.com/OWNER/Shadowrocket-RU-CN-Routing/REF/configs/Russia.conf
+https://raw.githubusercontent.com/Emptydesire/Shadowrocket-RU-CN-Routing/main/configs/Russia.conf
 ```
 
 A configuration URL supplies routing settings; **it is not a proxy-node subscription**. Import your node subscription separately if needed. A branch URL can change as maintainers update it; a commit URL pins one revision. Whether and when remote configurations refresh depends on your client settings. Updates may overwrite local edits, so keep a backup.
@@ -114,7 +114,7 @@ Russia v2.0 Beta has **not been tested in Shadowrocket or on Russian networks** 
 
 ## Maintenance & contributions
 
-Domain changes, missing services, and routing mistakes are useful reports. Once the repository is published, open an issue or pull request with the configuration version, domain, expected route, observed behavior, and enough context to reproduce the problem. Include the app version and network type; sharing an approximate region or operator is optional.
+Domain changes, missing services, and routing mistakes are useful reports. Open an issue or pull request with the configuration version, domain, expected route, observed behavior, and enough context to reproduce the problem. Include the app version and network type; sharing an approximate region or operator is optional.
 
 **Remove secrets before sharing evidence:** node credentials, subscription tokens, private configuration URLs, account identifiers, and unrelated browsing history must not appear in issues, screenshots, or logs.
 
